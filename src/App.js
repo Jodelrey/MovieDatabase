@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
+  background-color: #1b262c;
   font-family: 'Karla', Verdana, Geneva, Tahoma, sans-serif;
 }
 
