@@ -1,24 +1,21 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #1b262c;
-  font-family: 'Karla', Verdana, Geneva, Tahoma, sans-serif;
-}
-
-`;
+import Aside from "./components/Aside";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import { ImageProvider } from "./contexts/ImageContext";
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyle />
-    </div>
+    <ImageProvider>
+      <Router>
+        <Aside />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+    </ImageProvider>
   );
 }
 

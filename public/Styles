@@ -73,3 +73,6 @@ LINK - @styled-icons/evil/Link
 GITHUB - @styled-icons/fa-brands/GithubSquare
 LINKEDIN - @styled-icons/boxicons-logos/LinkedinSquare
 MAIL - @styled-icons/entypo/Mail
+
+
+background-image: linear-gradient(90deg,#000 0,transparent 50%,transparent);
